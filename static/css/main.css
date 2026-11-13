@@ -701,3 +701,13 @@ iframe {
 	height: auto;
 	aspect-ratio: 16 / 9;
 }
+
+/* POST MAPS */
+
+.post-map {
+	width: 600px;
+}
+
+.h-feed .post-map {
+	width: 300px;
+}
