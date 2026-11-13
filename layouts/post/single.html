@@ -27,6 +27,10 @@
     {{ .Content }}
   </article>
 
+  {{ with .Params.location.map_url }}
+  <img class="post-map" src="{{ . }}&size=l" alt="Map showing the post location">
+  {{ end }}
+
   {{ if templates.Exists "partials/microhook-after-post.html" }}
   {{ partial "microhook-after-post.html" . }}
   {{ end }}

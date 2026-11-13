@@ -52,6 +52,9 @@
                   {{ .Content }}
               </div>
           {{ end }}
+          {{ with .Params.location.map_url }}
+          <img class="post-map" src="{{ . }}" alt="Map showing the post location">
+          {{ end }}
           {{ if templates.Exists "partials/microhook-below-post-in-list.html" }}
           {{ partial "microhook-below-post-in-list.html" . }}
           {{ end }}
